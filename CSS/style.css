@@ -304,3 +304,20 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .stat-card { background: var(--white); border-radius: var(--radius-md); box-shadow: var(--shadow-soft); overflow: hidden; }
 .stat-card img { aspect-ratio: 4/3; object-fit: cover; }
 .stat-card p { padding: 1rem 1.25rem; font-weight: 500; color: var(--navy-700); }
+
+/* ---------- 14. CTA band ---------- */
+.cta-band {
+  background: linear-gradient(135deg, var(--navy-900), var(--navy-700));
+  color: var(--white);
+  border-radius: var(--radius-md);
+  padding: 3rem 2.5rem;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+.cta-band h2 { color: var(--white); }
+.cta-band p { color: rgba(255, 255, 255, .8); }
+.cta-block { text-align: left; }
+.cta-block .btn { margin-top: 1rem; width: 100%; text-align: center; }
+
