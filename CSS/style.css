@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500&display=swap');
 
-
+/* ---------- 1. Design tokens ---------- */
 :root {
  
   --navy-900: #0B132B;
@@ -28,6 +28,7 @@
   --max-width: 1140px;
 }
 
+/* ---------- 2. Reset & base ---------- */
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body, h1, h2, h3, p, ul, figure { margin: 0; }
@@ -61,6 +62,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .section-head { max-width: 62ch; margin-bottom: 2.25rem; }
 .section-head p { color: var(--gray-600); margin-top: .5rem; }
 
+/* ---------- 3. Header & navigation ---------- */
 .site-header {
   position: sticky;
   top: 0;
