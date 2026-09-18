@@ -1,103 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-         <title>News and Updates</title>
-    </head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News and Updates | AniOrbit</title>
+    <meta name="description" content="The latest anime news, trending stats, and upcoming manga adaptations, curated by AniOrbit.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-    <!-- the body of the webpage-->
-    <body style="background-color: aquamarine;">
-        <header> <img src="Images/logo2.jpg" style="width: 75px;height: 90;">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <img src="images/logo2.jpg" alt="AniOrbit logo" class="brand-logo">
+                <span class="brand-name">AniOrbit</span>
+            </a>
 
-        <h1>Welcome to AniOrbit</h1>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+            <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
+            </label>
 
-         <!-- This exact nav block is repeated on every page so links work across the whole site -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="anime.html">Browse Anime</a></li>
-                <li><a href="news.html">News and Updates</a></li>
-                <li><a href="enquiry.html">Community Enquiries</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>   
-      
+            <!-- This exact nav block is repeated on every page so links work across the whole site -->
+            <nav class="site-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="anime.html">Browse Anime</a></li>
+                    <li><a href="news.html" aria-current="page">News and Updates</a></li>
+                    <li><a href="enquiry.html">Community Enquiries</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
 
-        <h1 style="text-decoration: underline;">News and Updates</h1>
-
-         <!-- Introduction section -->
-        <section>
-            <h2>Find your next favourite anime</h2>
-           <img src="Images/news.png"
-            style="width: 1500px;height: 600px;">
-
-            <p>AniOrbit brings anime titles, genres, characters, reviews, and recommendations
-                together in one clear, easy-to-use place, so you spend less time searching
-                and more time watching.</p>
-            <p><a href="anime.html">Browse the full anime catalogue</a></p>
+        <section class="hero" style="padding-block:3rem;">
+            <div class="container">
+                <p class="hero-eyebrow">Stay in the loop</p>
+                <h1 style="color:var(--white);">News and updates</h1>
+                <p class="lead" style="max-width:60ch;">AniOrbit brings anime titles, genres,
+                    characters, reviews, and recommendations together in one clear, easy-to-use
+                    place, so you spend less time searching and more time watching.</p>
+                <a href="anime.html" class="btn btn-primary">Browse the full catalogue</a>
+            </div>
         </section>
 
+        <!-- Latest reviews -->
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Latest reviews</h2>
+                    <p>Honest, spoiler-light reviews to help you decide what's worth your
+                        watchlist.</p>
+                </div>
+            </div>
+        </section>
 
-      <!-- Latest reviews section -->
-        <section>
-            <h2>Latest reviews</h2>
-             <p>Honest, spoiler-light reviews to help you decide what's worth your watchlist.</p>
+        <!-- Trending anime -->
+        <section class="section section--tint">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Trending this week</h2>
+                    <p>A snapshot of the anime our community is watching, rating, and talking
+                        about right now.</p>
+                </div>
+                <div class="stat-grid">
+                    <div class="stat-card">
+                        <img src="images/stats1.jpg" alt="Weekly trending anime statistics, chart one">
+                        <p>Most watched this week</p>
+                    </div>
+                    <div class="stat-card">
+                        <img src="images/stats2.jpg" alt="Weekly trending anime statistics, chart two">
+                        <p>Highest rated new episode</p>
+                    </div>
+                    <div class="stat-card">
+                        <img src="images/stats3.jpg" alt="Weekly trending anime statistics, chart three">
+                        <p>Most discussed by the community</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Anime news -->
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Anime news</h2>
+                    <p>Studio announces a follow-up season after strong viewership numbers. A
+                        first look at the anime scheduled to premiere this autumn season.</p>
+                </div>
+                <div class="news-grid">
+                    <article class="news-card">
+                        <img src="images/news2.jpg" alt="Announcement artwork for the new season">
+                        <div>
+                            <h3>Follow-up season confirmed</h3>
+                            <p>Studio announces a follow-up season after strong viewership
+                                numbers.</p>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <img src="images/news1.jpg" alt="Preview artwork for an autumn season premiere">
+                        <div>
+                            <h3>Autumn season first look</h3>
+                            <p>A first look at the anime scheduled to premiere this autumn
+                                season.</p>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <img src="images/news3.jpg" alt="Additional anime news announcement artwork">
+                        <div>
+                            <h3>More announcements</h3>
+                            <p>Keep an eye out for more premiere dates and casting news this
+                                week.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-             <!-- Trending anime section -->
-        <section>
-            <h2>Trending this week</h2>
-            <p>A snapshot of the anime our community is watching, rating, and talking about right now.</p>
-            
-             <img src="Images/stats1.jpg"
-            style="width: 250px;height: 250px;">
-             <img src="Images/stats2.jpg"
-            style="width: 250px;height: 250px;">
-             <img src="Images/stats3.jpg"
-            style="width: 250px;height: 250px;"><br/>
-
-
-         <!-- Anime news section -->
-        <section>
-            <h2>Anime news</h2>
-            <p>Studio announces a follow-up season after strong viewership numbers.</p>
-            <p>A first look at the anime scheduled to premiere this autumn season.</p>
-                       <img src="Images/news2.jpg"
-            style="width: 250px;height: 250px;">
-             <img src="Images/news1.jpg"
-            style="width: 250px;height: 250px;">
-             <img src="Images/news3.jpg"
-            style="width: 250px;height: 250px;"><br/>
-
-
-
-              <article>
-                <h3>Manga adaptation announced</h3>
-                <p>A fan-favourite manga series is officially heading to anime.</p>
-            </article>
-            <img src="Images/Manga.jpg"
-            style="width: 400px;height: 400px;">
-             <img src="Images/manga2.jpg"
-            style="width: 400px;height: 400px;">
+        <!-- Manga adaptation -->
+        <section class="section section--tint">
+            <div class="container split">
+                <div class="split-copy">
+                    <h2>Manga adaptation announced</h2>
+                    <p>A fan-favourite manga series is officially heading to anime.</p>
+                </div>
+                <div class="split-media image-container">
+                    <img src="images/Manga.jpg" alt="Cover art of the manga getting an anime adaptation">
+                    <img src="images/manga2.jpg" alt="Additional artwork from the manga adaptation announcement">
+                </div>
+            </div>
         </section>
 
     </main>
-    <footer>
 
-      <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="anime.html">Browse Anime</a></li>
-                <li><a href="news.html">News and Updates</a></li>
-                <li><a href="enquiry.html">Community Enquiries</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-       <p> &copy;2026 AniOrbit. Fictional organisation</p>
-       <p>ST10511763 #Anime Orbit</p>
-        </footer>
-    </body>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <nav class="footer-nav" aria-label="Footer">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="anime.html">Browse Anime</a></li>
+                    <li><a href="news.html">News and Updates</a></li>
+                    <li><a href="enquiry.html">Community Enquiries</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <p class="footer-copy">&copy; 2026 AniOrbit. Fictional organisation.</p>
+            <p class="footer-credit">ST10511763 #AnimeOrbit</p>
+        </div>
+    </footer>
+
+</body>
 </html>
