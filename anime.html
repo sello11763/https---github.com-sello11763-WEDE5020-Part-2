@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Anime | AniOrbit</title>
+    <meta name="description" content="Browse AniOrbit's growing catalogue of anime by genre, studio, and character.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <img src="images/logo2.jpg" alt="AniOrbit logo" class="brand-logo">
+                <span class="brand-name">AniOrbit</span>
+            </a>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+            <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
+            </label>
+
+            <!-- This exact nav block is repeated on every page so links work across the whole site -->
+            <nav class="site-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="anime.html" aria-current="page">Browse Anime</a></li>
+                    <li><a href="news.html">News and Updates</a></li>
+                    <li><a href="enquiry.html">Community Enquiries</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero" style="padding-block:3rem;">
+            <div class="container">
+                <p class="hero-eyebrow">Catalogue</p>
+                <h1 style="color:var(--white);">Find your next favourite anime</h1>
+                <p class="lead" style="max-width:60ch;">A growing catalogue of anime titles with
+                    summaries, ratings, genres, studios, and character details, so you can find
+                    exactly what you're in the mood to watch.</p>
+            </div>
+        </section>
+
+        <!-- Genre list -->
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Explore by genre</h2>
+                </div>
+                <div class="chip-list">
+                    <a class="chip" href="#catalogue">Action</a>
+                    <a class="chip" href="#catalogue">Fantasy</a>
+                    <a class="chip" href="#catalogue">Slice of Life</a>
+                    <a class="chip" href="#catalogue">Sci-Fi</a>
+                    <a class="chip" href="#catalogue">Mystery</a>
+                    <a class="chip" href="#catalogue">Romance</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Full catalogue -->
+        <section class="section section--tint" id="catalogue">
+            <div class="container">
+                <div class="section-head">
+                    <h2>The catalogue</h2>
+                    <p>Each entry includes a summary, genre, studio, release year, episode count,
+                        and community rating.</p>
+                </div>
+                <div class="image-container">
+                    <img src="images/a.webp" alt="Featured anime title artwork, first pick">
+                    <img src="images/b.webp" alt="Featured anime title artwork, second pick">
+                </div>
+            </div>
+        </section>
+
+        <!-- Character spotlight -->
+        <section class="section" id="characters">
+            <div class="container">
+                <div class="section-head">
+                    <h2>The top three anime characters</h2>
+                    <p>Character profiles are one of AniOrbit's core features: background,
+                        abilities, relationships, and the series they appear in.</p>
+                </div>
+
+                <div class="character-grid">
+                    <article class="character-card">
+                        <img src="images/u.webp" alt="Naruto Uzumaki character art">
+                        <div class="character-body">
+                            <span class="character-tag tag-naruto">Naruto</span>
+                            <h3>Naruto Uzumaki</h3>
+                            <p class="appears-in">Appears in: Naruto, Naruto: Shippuden and Boruto</p>
+                            <p>A loud, energetic ninja from the Hidden Leaf Village. He starts as
+                                an outcast with a sealed monster inside him and dreams of becoming
+                                the Hokage (the leader of his village).</p>
+                        </div>
+                    </article>
+
+                    <article class="character-card">
+                        <img src="images/l.webp" alt="Monkey D Luffy character art">
+                        <div class="character-body">
+                            <span class="character-tag tag-luffy">One Piece</span>
+                            <h3>Monkey D Luffy</h3>
+                            <p class="appears-in">Appears in: One Piece</p>
+                            <p>A young pirate who wants to find the legendary treasure and become
+                                the King of the Pirates.</p>
+                        </div>
+                    </article>
+
+                    <article class="character-card">
+                        <img src="images/p.webp" alt="Ichigo Kurosaki character art">
+                        <div class="character-body">
+                            <span class="character-tag tag-ichigo">Bleach</span>
+                            <h3>Ichigo Kurosaki</h3>
+                            <p class="appears-in">Appears in: Bleach</p>
+                            <p>A teenager with bright orange hair who can see ghosts. He gets the
+                                powers of a Soul Reaper from Rukia Kuchiki and fights evil spirits
+                                called Hollows to protect his friends and family.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <nav class="footer-nav" aria-label="Footer">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="anime.html">Browse Anime</a></li>
+                    <li><a href="news.html">News and Updates</a></li>
+                    <li><a href="enquiry.html">Community Enquiries</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <p class="footer-copy">&copy; 2026 AniOrbit. Fictional organisation.</p>
+            <p class="footer-credit">ST10511763 #AnimeOrbit</p>
+        </div>
+    </footer>
+
+</body>
+</html>
