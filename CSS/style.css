@@ -376,3 +376,36 @@ fieldset legend { font-weight: 500; color: var(--navy-900); margin-bottom: .6rem
   cursor: pointer;
 }
 .checkbox-row { display: flex; align-items: center; gap: .5rem; margin-bottom: 1.25rem; font-size: .9rem; }
+
+/* ---------- 16. Responsive breakpoints ---------- */
+@media (max-width: 900px) {
+  .hero-inner, .split, .form-layout { grid-template-columns: 1fr; }
+  .split .split-media { order: -1; }
+  .cta-band { grid-template-columns: 1fr; text-align: left; }
+  .news-card { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 760px) {
+  .nav-toggle { display: flex; }
+  .site-nav {
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    background: var(--navy-900);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .25s ease;
+  }
+  .site-nav ul { flex-direction: column; align-items: flex-start; gap: 0; padding: .5rem 1.25rem 1rem; }
+  .site-nav a { display: block; width: 100%; padding: .75rem 0; }
+  .nav-toggle-input:checked ~ .site-nav { max-height: 400px; }
+
+  .section { padding-block: 2.75rem; }
+  .hero { padding-block: 3rem; }
+  .cta-block .btn { width: auto; }
+}
+
+@media (max-width: 520px) {
+  .character-grid, .feature-grid, .image-container { grid-template-columns: 1fr; }
+  .hero-actions { flex-direction: column; }
+  .hero-actions .btn { text-align: center; }
+}
