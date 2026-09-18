@@ -27,3 +27,36 @@
 
   --max-width: 1140px;
 }
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body, h1, h2, h3, p, ul, figure { margin: 0; }
+ul { padding: 0; list-style: none; }
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--gray-800);
+  background: var(--white);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 { font-family: var(--font-heading); color: var(--navy-900); line-height: 1.25; }
+h1 { font-size: clamp(2rem, 4.5vw, 3rem); font-weight: 700; }
+h2 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 600; }
+h3 { font-size: 1.15rem; font-weight: 600; }
+p { max-width: 68ch; }
+
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 3px solid var(--green-vivid);
+  outline-offset: 2px;
+}
+
+.container { max-width: var(--max-width); margin-inline: auto; padding-inline: 1.25rem; }
+
+.section { padding-block: 4rem; }
+.section--tint { background: var(--gray-100); }
+.section-head { max-width: 62ch; margin-bottom: 2.25rem; }
+.section-head p { color: var(--gray-600); margin-top: .5rem; }
