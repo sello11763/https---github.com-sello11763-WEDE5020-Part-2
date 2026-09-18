@@ -232,3 +232,17 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .split img { border-radius: var(--radius-md); box-shadow: var(--shadow-soft); }
 .split.reverse .split-media { order: 2; }
 
+/* ---------- 9. Chips (genre list) ---------- */
+.chip-list { display: flex; flex-wrap: wrap; gap: .75rem; }
+.chip {
+  background: var(--white);
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius-pill);
+  padding: .55rem 1.15rem;
+  font-weight: 500;
+  font-size: .9rem;
+  color: var(--navy-700);
+  transition: background-color .15s ease, color .15s ease;
+}
+.chip:hover, .chip:focus-visible { background: var(--navy-900); color: var(--white); border-color: var(--navy-900); }
+
