@@ -20,3 +20,20 @@ What i added for the CSS style sheet:
 
 - A contact form (name, email, subject, message) on `contact.html`, which previously had contact details only.
 
+ References:  
+
+Canva (2026) Canva: Visual Suite for everyone. Available at: 
+https://www.canva.com/ (Accessed: 14 August 2026). 
+
+Crunchyroll (2026) Crunchyroll: Watch popular anime, play games and shop online. 
+Available at: https://www.crunchyroll.com/ (Accessed: 14 August 2026). 
+
+MyAnimeList (2026) MyAnimeList.net. Available at: https://myanimelist.net/ 
+(Accessed: 14 August 2026). 
+
+Pinterest (2026) Pinterest. Available at: https://www.pinterest.com/ (Accessed: 14 
+August 2026). 
+
+World Wide Web Consortium (W3C) (2026) Web Content Accessibility Guidelines 
+(WCAG). Available at: https://www.w3.org/WAI/standards-guidelines/wcag/ 
+(Accessed: 14 August 2026).
