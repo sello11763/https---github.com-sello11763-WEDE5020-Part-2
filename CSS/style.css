@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500&display=swap');
+
+
+:root {
+ 
+  --navy-900: #0B132B;
+  --navy-700: #16213E;
+  --navy-600: #1B2A4A;
+  --green-vivid: #68FF14;  
+  --green-500: #3DBF2E;   
+  --green-600: #2FA321;
+  --white: #FFFFFF;
+  --gray-100: #F4F5F7;
+  --gray-300: #DDE1E7;
+  --gray-600: #5B5F66;
+  --gray-800: #262A33;
+
+  --font-heading: 'Poppins', 'Segoe UI', sans-serif;
+  --font-body: 'Roboto', 'Segoe UI', sans-serif;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-pill: 999px;
+
+  --shadow-soft: 0 8px 24px rgba(36, 21, 54, 0.12);
+  --shadow-lift: 0 14px 32px rgba(36, 21, 54, 0.18);
+
+  --max-width: 1140px;
+}
