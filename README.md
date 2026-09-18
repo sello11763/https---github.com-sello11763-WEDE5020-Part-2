@@ -9,3 +9,14 @@ Made some chanes to the html files which include:
 
 - Removed a duplicate `<h1>` per page — the header brand name ("AniOrbit") is no longer marked up as a heading, so each page now has exactly one `<h1>` (the page title).
 
+What i added for the CSS style sheet:
+- External stylesheet (`css/style.css`) linked from every page, replacing all inline `style` attributes.
+- `js/main.js` placeholder, reserved for Part 3 functionality work.
+
+- Horizontal navigation menu with a pure-CSS mobile toggle , consistent across all six pages.
+- `<meta charset="UTF-8">`, `<meta name="viewport">`, and a meta description added to every page (previously missing on all of them).
+
+- Descriptive `alt` text on every image site-wide (previously missing on `index.html`, `about.html`, `news.html`, `contact.html`, and `enquiry.html`).
+
+- A contact form (name, email, subject, message) on `contact.html`, which previously had contact details only.
+
