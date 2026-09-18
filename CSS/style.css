@@ -139,3 +139,31 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   background: var(--white);
   transition: transform .2s ease, opacity .2s ease;
 }
+
+/* ---------- 4. Footer ---------- */
+.site-footer { background: var(--navy-900); color: rgba(255, 255, 255, .85); padding-block: 2.5rem; }
+.footer-inner { display: flex; flex-direction: column; align-items: center; gap: 1.25rem; text-align: center; }
+.footer-nav ul { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.25rem; }
+.footer-nav a { font-size: .9rem; color: rgba(255, 255, 255, .75); }
+.footer-nav a:hover, .footer-nav a:focus-visible { color: var(--green-vivid); }
+.footer-copy, .footer-credit { font-size: .8rem; color: rgba(255, 255, 255, .55); }
+
+/* ---------- 5. Buttons ---------- */
+.btn {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: .95rem;
+  padding: .8rem 1.75rem;
+  border-radius: var(--radius-pill);
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .15s ease, background-color .15s ease;
+}
+.btn-primary { background: var(--green-500); color: var(--navy-900); }
+.btn-primary:hover, .btn-primary:focus-visible { background: var(--green-600); color: var(--white); transform: translateY(-2px); box-shadow: var(--shadow-lift); }
+.btn-secondary { background: transparent; border-color: rgba(255, 255, 255, .7); color: var(--white); }
+.btn-secondary:hover, .btn-secondary:focus-visible { background: rgba(255, 255, 255, .12); }
+.btn-outline { background: transparent; border-color: var(--navy-700); color: var(--navy-700); }
+.btn-outline:hover, .btn-outline:focus-visible { background: var(--navy-700); color: var(--white); }
+
