@@ -253,3 +253,30 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   gap: 1rem;
 }
 .image-container img { border-radius: var(--radius-md); box-shadow: var(--shadow-soft); aspect-ratio: 4/3; object-fit: cover; }
+
+/* ---------- 11. Character cards ---------- */
+.character-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
+.character-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.character-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lift); }
+.character-card img { width: 100%; aspect-ratio: 3/4; object-fit: cover; }
+.character-card .character-body { padding: 1.25rem; }
+.character-tag {
+  display: inline-block;
+  font-size: .75rem;
+  font-weight: 600;
+  padding: .2rem .65rem;
+  border-radius: var(--radius-pill);
+  margin-bottom: .5rem;
+}
+.tag-naruto { background: #FFF3D6; color: #8A6300; }
+.tag-luffy { background: #FDE1E1; color: #A32020; }
+.tag-ichigo { background: #FFE6D2; color: #A0480C; }
+.character-card p { font-size: .9rem; color: var(--gray-600); }
+.character-card p.appears-in { font-weight: 500; color: var(--navy-700); margin-bottom: .4rem; }
+
